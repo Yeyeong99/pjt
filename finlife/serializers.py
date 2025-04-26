@@ -5,7 +5,7 @@ from .models import DepositProducts, DepositOptions
 class DepositProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = DepositProducts
-from .models import DepositOptions
+        fields = '__all__'
 
 
 class DepositOptionSerializer(serializers.ModelSerializer):
